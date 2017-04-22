@@ -1,4 +1,4 @@
-var transluxModule = angular.module('transluxModule', ['ngRoute']);
+var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive']);
 
 transluxModule.config(["$routeProvider", function($routeProvider) {
 
