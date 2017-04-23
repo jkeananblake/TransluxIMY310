@@ -4,8 +4,9 @@ transluxModule.controller("bookingsCtrl",
 
       $scope.Name = "Bookings Page";
 
-      transluxService.getDeparturePoints('../TransluxSite/Json/').then(function (results) {
-          console.log(results);
+      transluxService.getDeparturePoints('./Json/').then(function (results) {
+          //console.log(results.data);
+          $scope.departurePoints = results.data;
       },
       function (results) {
           // on error.
