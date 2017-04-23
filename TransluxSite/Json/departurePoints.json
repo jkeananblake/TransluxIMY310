@@ -1,26 +1,50 @@
 [
     {
-      "name": "Sibasa Station"
+      "Id": 1,
+      "name": "Sibasa Station",
+      "lat" : -22.932497,
+      "lng": 30.467446 
     },
     {
-      "name": "Polokwane Station"
+      "Id": 2,
+      "name": "Polokwane Station",
+       "lat": -23.8961708,
+       "lng": 29.4486263
     },
     {
-      "name": "Bosman Station, Pretoria"
+      "Id": 3,
+      "name": "Bosman Station, Pretoria",
+      "lat" : -25.745536,
+      "lng": 28.185559
     },
     {
-      "name": "Park Station, Johannesburg"
+      "Id": 4,
+      "name": "Park Station, Johannesburg",
+      "lat": -26.195246,
+      "lng": 28.034088
     },
     {
-      "name": "Durban Central Station"
+      "Id": 5,
+      "name": "Durban Central Station",
+       "lat": -29.839285,
+       "lng": 31.024377
     },
     {
-      "name": "Bloemfontein Station"
+      "Id": 6,
+      "name": "Bloemfontein Station",
+      "lat": -29.13184,
+      "lng": 26.195021
     },
     {
-      "name": "Port Elizabeth Station"
+      "Id": 7,
+      "name": "Port Elizabeth Station",
+       "lat": -33.958056,
+      "lng": 25.6
     },
     {
-      "name": "Cape Town Station"
+      "Id": 8,
+      "name": "Cape Town Station",
+        "lat": -33.918861,
+        "lng": 18.423300
     }
 ]

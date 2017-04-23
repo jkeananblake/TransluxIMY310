@@ -4,6 +4,18 @@ transluxModule.controller("routesAndTimetablesCtrl",
 
       $scope.Name = "Routes And Timetable Page";
 
+      transluxService.getDeparturePoints('./Json/').then(function (results) {
+          //console.log(results.data);
+          $scope.departurePoints = results.data;
+      },
+      function (results) {
+          // on error.
+          console.log(results);
+      });
+
+
+
+
       var SouthAfricanRegion = {
             northEast: {
                 lat: -20.46818922264095,
