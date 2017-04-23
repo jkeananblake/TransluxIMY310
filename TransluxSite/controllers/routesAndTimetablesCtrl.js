@@ -15,6 +15,11 @@ transluxModule.controller("routesAndTimetablesCtrl",
           console.log(results);
       });
 
+        $scope.url = {
+
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
 
 
 

@@ -4,4 +4,9 @@ transluxModule.controller("customerCareCtrl",
 
       $scope.Name = "Customer Care Page";
 
+       $scope.url = {
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
+
 }]);

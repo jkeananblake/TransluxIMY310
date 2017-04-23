@@ -8,4 +8,9 @@ transluxModule.controller("homePageCtrl",
         window.location = url;
       };
 
+            $scope.url = {
+
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
 }]);

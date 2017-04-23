@@ -39,13 +39,13 @@
 
 .container {
     position: relative;
-    width: 50%;
+    width: 90%;
 }
 
 .image {
     display: block;
-    width: 8cm;
-    height: 8cm;
+    width: 9cm;
+    height: 9cm;
     /*height: auto;*/
 }
 
@@ -56,7 +56,7 @@
     right: 0;
     background-color: red;
     overflow: hidden;
-    width: 8cm;
+    width: 9cm;
     height: 0;
     transition: .5s ease;
 }
@@ -83,7 +83,7 @@
 .row2 {
     position: center;
     display: table;
-    width: 60%;
+    width: 80%;
     table-layout: fixed;
     border-spacing: 0px;
 }
@@ -91,6 +91,8 @@
 .rws {
     display: table-cell;
     background-color: white;
+    width: 9cm;
+    height: 9cm;
 }
 
 #navthing {
@@ -252,22 +254,20 @@ h1 {
     font-weight: 300;
 }
 
-<<<<<<< HEAD
-
-.navHeadColour:hover{
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 25px;
-  color: white;
-  background-color: #e20a17 !important;
+<<<<<<< HEAD .navHeadColour:hover {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 25px;
+    color: white;
+    background-color: #e20a17 !important;
 }
 
-.navHeadColour{
-  font-family: impact;
-  font-size: 20px !important;
-  color: white !important;
+.navHeadColour {
+    font-family: impact;
+    font-size: 20px !important;
+    color: white !important;
 }
-=======
-.field-wrap {
+
+=======.field-wrap {
     position: relative;
     margin-bottom: 40px;
 }
@@ -394,4 +394,5 @@ div#errorMessageReg {
     font-size: 20px !important;
     color: white !important;
 }
->>>>>>> 232318d28379900e519bc91c9835a4d171fe304f
+
+>>>>>>>232318d28379900e519bc91c9835a4d171fe304f
