@@ -1,4 +1,78 @@
 <div>
-  <h1>HELLO {{Name}}</h1>
-  
+  <h1>{{Name}}</h1>
+
+  <div>
+
+    <label>Departure Locations</label>
+    <oi-select style="text-align:left" oi-options="x.name for x in departurePoints" ng-model="departurePoint" placeholder="Click to select" ng-change="setDestinationPoints()">
+    </oi-select>
+
+  </div>
+
+  <div ng-show="departurePoint">
+
+    <label>Departure Locations</label>
+    <oi-select style="text-align:left" oi-options="x.name for x in destinationPoints" ng-model="destinationPoint" placeholder="Click to select" ng-change="getDates()">
+    </oi-select>
+
+  </div>
+
+  <div>
+
+    <div ng-repeat="x in calendar">
+
+      <div ng-click="check(1, x.year.value, x.year.month)">
+        {{x.year.value}}
+      </div>
+        <div ng-repeat="y in x.year.month">
+
+          <div ng-show="y.checked">
+            <div ng-click="check(2, y.name + ' ' + y.value, y.day)">
+              {{y.name}}
+              {{y.value}}
+            </div>
+
+              <div ng-repeat="z in y.day">
+
+                <div ng-show="z.checked">
+                  <div ng-click="check(3, z.name + ' ' + z.value, z.time)">
+                    {{z.name}}
+                    {{z.value}}
+                  </div>
+                  <div ng-repeat="d in z.time">
+
+                    <div ng-show="d.checked">
+                      <div ng-click="setTime(d.value)">
+                        {{d.value}}
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+  <div ng-show="time">
+    <h3>Your Selections Are</h3>
+    {{departurePoint.name}}
+    {{destinationPoint.name}}
+    {{myYear}}
+    {{myMonth}}
+    {{myDay}}
+    {{time}}
+    <button>Make Booking</button>
+  </div>
+
 </div>
