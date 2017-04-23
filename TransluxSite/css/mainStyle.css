@@ -100,86 +100,13 @@
     height: 9cm;
 }
 
-#navthing {
-    margin-left: 50px;
-}
 
 h2 {
     padding: 20px;
     color: #ecf0f1;
 }
 
-fieldset {
-    border: none;
-}
 
-.login {
-    position: relative;
-    width: 350px;
-    display: none;
-}
-
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 15px solid #ECF0F1;
-    left: 10%;
-    position: absolute;
-    top: -10px;
-}
-
-.formholder {
-    background: #ecf0f1;
-    width: 350px;
-    border-radius: 5px;
-    padding-top: 5px;
-}
-
-.formholder input[type="text"],
-.formholder input[type="password"] {
-    padding: 7px 5px;
-    margin: 10px 0;
-    width: 96%;
-    display: block;
-    font-size: 18px;
-    border-radius: 5px;
-    border: none;
-    -webkit-transition: 0.3s linear;
-    -moz-transition: 0.3s linear;
-    -o-transition: 0.3s linear;
-    transition: 0.3s linear;
-}
-
-.formholder input[type="text"]:focus,
-.formholder input[type="password"]:focus {
-    outline: none;
-    box-shadow: 0 0 1px 1px #191970;
-}
-
-.formholder input[type="submit"] {
-    background: #191970;
-    padding: 10px;
-    font-size: 20px;
-    display: block;
-    width: 100%;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.formholder input[type="submit"]:hover {
-    background: #1E90FF;
-}
-
-.randompad {
-    padding: 10px;
-}
-
-.green {
-    color: #191970;
-}
 
 a {
     color: #ecf0f1;
@@ -199,59 +126,6 @@ a:hover {
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
-.tab-group {
-    list-style: none;
-    padding-left: 40px;
-    margin: 0 0 40px 0;
-}
-
-.tab-group:after {
-    content: "";
-    display: table;
-    position: relative;
-    clear: both;
-}
-
-.tab-group li a {
-    text-decoration: none;
-    padding: 15px;
-    background: rgba(160, 179, 176, 0.25);
-    color: #a0b3b0;
-    font-size: 20px;
-    float: left;
-    width: 45%;
-    text-align: center;
-    cursor: pointer;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
-}
-
-.red {
-    color: red !important;
-}
-
-.green {
-    color: green;
-}
-
-.investorOptions {
-    color: white !important;
-    font-size: larger !important;
-}
-
-.tab-group li a:hover {
-    background: #191970;
-    color: #ffffff;
-}
-
-.tab-group .active a {
-    background: #1E90FF;
-    color: #ffffff;
-}
-
-.tab-content>div:last-child {
-    display: none;
-}
 
 h1 {
     text-align: center;
@@ -259,7 +133,7 @@ h1 {
     font-weight: 300;
 }
 
-<<<<<<< HEAD .navHeadColour:hover {
+.navHeadColour:hover {
     font-family: "Times New Roman", Georgia, Serif;
     font-size: 25px;
     color: white;
@@ -270,121 +144,6 @@ h1 {
     font-family: impact;
     font-size: 20px !important;
     color: white !important;
-}
-
-=======.field-wrap {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.top-row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.top-row>div {
-    float: left;
-    width: 48%;
-    margin-right: 4%;
-}
-
-.top-row>div:last-child {
-    margin: 0;
-}
-
-.button {
-    border: 0;
-    outline: none;
-    border-radius: 0;
-    padding: 15px 0;
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    background: #1E90FF;
-    color: #ffffff;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    -webkit-appearance: none;
-}
-
-.button:hover,
-.button:focus {
-    background: #191970;
-}
-
-.button-block {
-    display: block;
-    width: 100%;
-}
-
-.forgot {
-    margin-top: -20px;
-    text-align: right;
-}
-
-div#errorMessage {
-    background-color: #fffff;
-    color: red;
-    font-family: arial;
-}
-
-div#errorMessageReg {
-    background-color: #fffff;
-    color: red;
-    font-family: arial;
-}
-
-.pass {
-    margin-top: -15px;
-    right: 10px;
-    float: right;
-    color: red;
-}
-
-.notloc {
-    margin-top: -15px;
-    right: 10px;
-    float: right;
-    color: red;
-}
-
-.error {
-    border: 2px solid red !important;
-}
-
-.loi {
-    color: white !important;
-    font-size: 120%;
-}
-
-.boi {
-    color: white !important;
-    font-size: 120%;
-}
-
-.forgot {
-    color: #1ab188;
-    float: right;
-    margin-top: 20px;
-}
-
-.forgot:hover {
-    color: whitesmoke;
-}
-
-#footerbar {
-    bottom: 0;
-    background-color: black;
-    font-family: source-sans-pro, sans-serif;
-    padding: 2%;
-    padding-right: 1%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    padding-left: 1%;
-    text-decoration: none;
-    display: inline-block;
 }
 
 .navHeadColour:hover {
@@ -399,5 +158,3 @@ div#errorMessageReg {
     font-size: 20px !important;
     color: white !important;
 }
-
->>>>>>>232318d28379900e519bc91c9835a4d171fe304f
