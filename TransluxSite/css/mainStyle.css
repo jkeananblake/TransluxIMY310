@@ -158,3 +158,16 @@ h1 {
     font-size: 20px !important;
     color: white !important;
 }
+
+.customerCareStuff{
+    width: 100%;
+    height: 25%;
+}
+.leftImg{
+  float: left;
+  height: 20%;
+}
+.rightImg{
+  float: right;
+  height: 20%;
+}
