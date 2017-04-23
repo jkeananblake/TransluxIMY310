@@ -4,4 +4,9 @@ transluxModule.controller("travelInfoCtrl",
 
       $scope.Name = "Travel Info Page";
 
+       $scope.url = {
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
+
 }]);

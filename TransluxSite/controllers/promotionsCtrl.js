@@ -4,4 +4,10 @@ transluxModule.controller("promotionsCtrl",
 
       $scope.Name = "Promotions Page";
 
+            $scope.url = {
+
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
+
 }]);

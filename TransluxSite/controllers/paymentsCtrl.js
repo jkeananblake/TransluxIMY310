@@ -4,5 +4,8 @@ transluxModule.controller("paymentsCtrl",
 
     $scope.mes = "WORKIDN?"
 
-
+          $scope.url = {
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
 }]);

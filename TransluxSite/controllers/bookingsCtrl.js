@@ -67,4 +67,9 @@ transluxModule.controller("bookingsCtrl",
         $scope.time = time;
       }
 
+      $scope.url = {
+        templateUrl: "pages/navBar.html",
+        controller: "navCtrl"
+        }
+
 }]);

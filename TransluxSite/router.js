@@ -27,17 +27,15 @@ transluxModule.config(["$routeProvider", function($routeProvider) {
        templateUrl: "pages/travelInfo.html",
        controller: "travelInfoCtrl"
    })
-<<<<<<< HEAD
    .when("/navbar", {
        templateUrl: "pages/navBar.html",
        controller: "navCtrl"
-=======
+   })
    .when("/payments", {
        templateUrl: "pages/payments.html",
        controller: "paymentsCtrl"
->>>>>>> origin/master
    })
-  .otherwise({
+    .otherwise({
       redirectTo: "/"
   });
 
