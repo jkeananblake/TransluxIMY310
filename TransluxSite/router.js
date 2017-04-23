@@ -7,7 +7,7 @@ transluxModule.config(["$routeProvider", function($routeProvider) {
        templateUrl: "pages/homePage.html",
        controller: "homePageCtrl"
    })
-   .when("/bookings/:pathData", {
+   .when("/bookings", {
        templateUrl: "pages/bookings.html",
        controller: "bookingsCtrl"
    })
