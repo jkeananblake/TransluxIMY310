@@ -26,7 +26,11 @@
 <br />
 
 <div>
-  <h1>{{pageName}}</h1>
+  <center>
+    <h1 style="color:black">Bookings</h1>
+  </center>
+  <br/>
+
 
   <div class="row">
     <div class="col-sm-1">
@@ -63,7 +67,7 @@
       <label>Select Time From Available</label>
     </div>
     <div class="col-sm-8">
-      <div ng-repeat="x in calendar">
+      <div ng-repeat="x in calendar" style="background:">
 
         <div ng-click="check(1, x.year.value, x.year.month)">
           {{x.year.value}}
@@ -71,7 +75,7 @@
           <div ng-repeat="y in x.year.month">
 
             <div ng-show="y.checked">
-              <div style="padding-left:20px" ng-click="check(2, y.name + ' ' + y.value, y.day)">
+              <div style="padding-left:20px" ng-click="check(2, y.name, y.day)">
                 {{y.name}}
                 {{y.value}}
               </div>
@@ -95,10 +99,7 @@
 
                   </div>
 
-
                 </div>
-
-
 
             </div>
 
@@ -113,7 +114,7 @@
 
 
   <center>
-    <div class="row" ng-show="time" style="background-color:wheat; width:80%">
+    <div class="row" ng-show="time" style="background-color:wheat; width:80%; box-shadow: 5px 5px 3px #888888;">
       <div class="col-sm-1">
       </div>
       <!-- <div class="col-sm-2">
@@ -122,14 +123,12 @@
       <div class="col-sm-10">
         <center>
           <h3>Your Selections Are</h3>
-
-          {{departurePoint.name}}
-          {{destinationPoint.name}}
-          {{myYear}}
-          {{myMonth}}
-          {{myDay}}
-          {{time}}
-          <br /><button>Make Booking</button>
+          Departure: {{departurePoint.name}} <br />
+          Destination: {{destinationPoint.name}} <br />
+          Date And Time: {{time}}, {{myDay}}, {{myMonth}}, {{myYear}} <br />
+          <br /><button class="w3-btn w3-red">Make Booking</button>
+          <br />
+          <br />
         </center>
       </div>
       <div class="col-sm-1">
