@@ -4,9 +4,10 @@
   		<leaflet center="SouthAfrica" event-broadcast="events"  paths="paths" markers="markers" maxbounds="maxbounds" defaults="defaults" width="50%" height="380px"></leaflet>
 </div>
 <div>
-	<label>Route A</label>
-	<select></select>
-	<label>Route B</label>
-	<select></select>
+	       <div class="inputArea">
+                        <label>Destination A</label>
+                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in selection" ng-model="isUniversityIP" placeholder="Click to select">
+                        </oi-select>                        
+             </div>
 </div>
 </div>
