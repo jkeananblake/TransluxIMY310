@@ -39,7 +39,7 @@
 
 .container {
     position: relative;
-    width: 50%;
+    width: 60%;
 }
 
 .image {
@@ -252,22 +252,20 @@ h1 {
     font-weight: 300;
 }
 
-<<<<<<< HEAD
-
-.navHeadColour:hover{
-  font-family: "Times New Roman", Georgia, Serif;
-  font-size: 25px;
-  color: white;
-  background-color: #e20a17 !important;
+<<<<<<< HEAD .navHeadColour:hover {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 25px;
+    color: white;
+    background-color: #e20a17 !important;
 }
 
-.navHeadColour{
-  font-family: impact;
-  font-size: 20px !important;
-  color: white !important;
+.navHeadColour {
+    font-family: impact;
+    font-size: 20px !important;
+    color: white !important;
 }
-=======
-.field-wrap {
+
+=======.field-wrap {
     position: relative;
     margin-bottom: 40px;
 }
@@ -394,4 +392,5 @@ div#errorMessageReg {
     font-size: 20px !important;
     color: white !important;
 }
->>>>>>> 232318d28379900e519bc91c9835a4d171fe304f
+
+>>>>>>>232318d28379900e519bc91c9835a4d171fe304f
