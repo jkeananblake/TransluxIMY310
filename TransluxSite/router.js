@@ -27,6 +27,10 @@ transluxModule.config(["$routeProvider", function($routeProvider) {
        templateUrl: "pages/travelInfo.html",
        controller: "travelInfoCtrl"
    })
+  //  .when("/departurePoints", {
+  //      templateUrl: "Json/departurePoints.json",
+  //      //controller: "travelInfoCtrl"
+  //  })
   .otherwise({
       redirectTo: "/"
   });
