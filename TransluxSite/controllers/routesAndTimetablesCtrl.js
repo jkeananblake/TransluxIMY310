@@ -1,11 +1,13 @@
 transluxModule.controller("routesAndTimetablesCtrl",
-    ["$scope", "$location",
-    function ($scope, $location) {
+    ["$scope", "$location","transluxService",
+    function ($scope, $location,transluxService) {
 
       $scope.Name = "Routes And Timetable Page";
 
+      // var markersArray = {};
+
       transluxService.getDeparturePoints('./Json/').then(function (results) {
-          //console.log(results.data);
+          console.log(results.data);
           $scope.departurePoints = results.data;
       },
       function (results) {
@@ -44,6 +46,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
             },
             paths: {
 		            p1: {
+		            	//pretoria to capetown
 		                color: '#008000',
 		                weight: 4,
 		                latlngs: [
@@ -53,6 +56,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
 		                ],
 		            },
 		            p2: {
+		            	//jhb to durban
 		                color: '#008000',
 		                weight: 4,
 		                latlngs: [
@@ -61,6 +65,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
 		                ],
 		            },
 		            p3: {
+		            	//jhb to pe
 		                color: '#008000',
 		                weight: 4,
 		                latlngs: [
@@ -70,6 +75,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
 		                ],
 		            },
 		             p4: {
+		             	//SIBASA - JHB
 		                color: '#008000',
 		                weight: 4,
 		                latlngs: [
@@ -152,7 +158,89 @@ transluxModule.controller("routesAndTimetablesCtrl",
         $scope.$on('leafletDirectivePath.click', function (event, path) {
                 $scope.event = "clicked";
                 console.log(path);
+
+                if(path.modelName == "p1")
+                {
+                	//pretoria to capetown
+                	for(var i = 0;i < $scope.departurePoints.length;i++)
+                	{
+                		if($scope.departurePoints[i].Id == 3)
+                		{
+                			$scope.pointA = $scope.departurePoints[i];
+                		}
+
+                		if($scope.departurePoints[i].Id == 8)
+                		{
+                			$scope.pointB = $scope.departurePoints[i];
+                		}
+                	}
+              
+                }
+                else if(path.modelName == "p2")
+                {
+                	//jhb to durban	
+                	for(var i = 0;i < $scope.departurePoints.length;i++)
+                	{
+                		if($scope.departurePoints[i].Id == 4)
+                		{
+                			$scope.pointA = $scope.departurePoints[i];
+                		}
+
+                		if($scope.departurePoints[i].Id == 5)
+                		{
+                			$scope.pointB = $scope.departurePoints[i];
+                		}
+                	}
+
+                }
+                else if(path.modelName == "p3")
+                {
+                	  	//jhb to pe
+                	 for(var i = 0;i < $scope.departurePoints.length;i++)
+                	{
+                		if($scope.departurePoints[i].Id == 4)
+                		{
+                			$scope.pointA = $scope.departurePoints[i];
+                		}
+
+                		if($scope.departurePoints[i].Id == 7)
+                		{
+                			$scope.pointB = $scope.departurePoints[i];
+                		}
+                	}
+                }
+                else if(path.modelName == "p4")
+                {
+                	//SIBASA - JHB
+
+                	 for(var i = 0;i < $scope.departurePoints.length;i++)
+                	{
+                		if($scope.departurePoints[i].Id == 1)
+                		{
+                			$scope.pointA = $scope.departurePoints[i];
+                		}
+
+                		if($scope.departurePoints[i].Id == 7)
+                		{
+                			$scope.pointB = $scope.departurePoints[i];
+                		}
+                	}
+
+                }
+                else{
+
+                	console.log("else");
+                }
         });
+
+
+$scope.book = function()
+{
+	var pathData =  $scope.pointA.Id +","+$scope.pointB.Id;
+	console.log(pathData);
+       $location.path('/bookings' + pathData);
+}
+
 
 
 }]);

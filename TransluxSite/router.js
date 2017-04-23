@@ -1,4 +1,4 @@
-var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive','oi.select']);
+var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive','oi.select','datepicker']);
 
 transluxModule.config(["$routeProvider", function($routeProvider) {
 
@@ -7,7 +7,7 @@ transluxModule.config(["$routeProvider", function($routeProvider) {
        templateUrl: "pages/homePage.html",
        controller: "homePageCtrl"
    })
-   .when("/bookings", {
+   .when("/bookings/:pathData", {
        templateUrl: "pages/bookings.html",
        controller: "bookingsCtrl"
    })
