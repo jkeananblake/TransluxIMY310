@@ -1,3 +1,8 @@
+<div ng-include="url.templateUrl" style="display:inline;"></div>
+<br/>
+<br/>
+<br/>
+
 <div ng-show="show == 1">
 
   <h1 style="color:black;">Payment</h1>
@@ -115,9 +120,10 @@
   <div ng-show="show == 2" class="col-sm-10">
     <h1 style="color:black;">Payment</h1>
     <br />
-    <p>
+    <p style="margin:auto; text-align:center; background-color:wheat; padding:50px">
       An email will be sent to you with the relevant information about your booking along with payment instructions based on the banking institution you selected.
     </p>
+    <br />
     <center>
       <button class="w3-btn w3-red" ng-click="goHome()">Home</button>
     </center>
