@@ -49,6 +49,11 @@
     /*height: auto;*/
 }
 
+.pics-label {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
 .overlay {
     position: absolute;
     bottom: 100%;
