@@ -1,13 +1,59 @@
-<div>
-  <h1>Nav Bar here</h1>
-  <div>
-  		<leaflet center="SouthAfrica" event-broadcast="events"  paths="paths" markers="markers" maxbounds="maxbounds" defaults="defaults" width="50%" height="380px"></leaflet>
+  <nav class="navbar  navbar-fixed-top" style="opacity: 1; border-bottom: 3px groove white; background-color: #1a1a1a;">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"  >
+				<span class="icon-bar whitebk" ></span>
+				<span class="icon-bar whitebk"></span>
+				<span class="icon-bar whitebk"></span>
+			</button>
+			<a class="navbar-brand" href="pages/homePage.html" style="font-family: impact; font-size: 40px;"><img src="img/TransluxLogo.png" alt="Chania" style="margin-left: -12px; margin-bottom:-20px; margin-top:-25px; width:75%; height:auto; display:inline;"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="navHeadings"><a href="pages/bookings.html" class="navHeadColour"><i class='fa fa-user'></i> &nbsp; Bookings &nbsp;</a></li>
+				<li class="navHeadings"><a href="pages/routesAndTimetables.html" class="navHeadColour"> <i class='fa fa-globe'></i> &nbsp; Routes and timetables &nbsp;</a></li>
+        <li class="navHeadings"><a href="pages/customerCare.html" class="navHeadColour"> <i class='fa fa-globe'></i>&nbsp; Customer Care &nbsp;</a></li>
+        <li class="navHeadings"><a href="pages/promotions.html" class="navHeadColour"> <i class='fa fa-globe'></i>&nbsp; Promotions &nbsp;</a></li>
+        <li class="navHeadings"><a href="pages/travelInfo.html" class="navHeadColour"> <i class='fa fa-globe'></i>&nbsp; Travel Info</a></li>
+			</ul>
+		</div>
+	</div>
+  </nav>
+  <br>
+  <br>
+<br>
+<br>
+
+
+<div class="w3-display-container">
+<div class="row" style="padding-right: 20px; padding-left: 20px">
+
+	<div class="col-lg-6">
+	  		<leaflet center="SouthAfrica" event-broadcast="events"  paths="paths" markers="markers" maxbounds="maxbounds" defaults="defaults" height="500px"></leaflet>
+	</div>
+	<div  class="col-lg-6">
+
+	<div class="w3-display-container w3-red" style="height: 50px">
+	<div class="w3-display-middle">
+		Select your desired route by clicking on the green path on the map or manualy selecting your destination points.
+	 </div>
+	</div>
+
+		       <div class="inputArea">
+	                        <label>Destination A</label>
+	                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in departurePoints" ng-model="pointA" placeholder="Click to select point A">
+	                        </oi-select>                        
+	             </div>
+	             <div class="inputArea">
+	                        <label>Destination B</label>
+	                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in departurePoints" ng-model="pointB" placeholder="Click to select point B">
+	                        </oi-select>                        
+	             </div>
+
+
+ <br/>
+ <button class="w3-btn w3-red" ng-disabled="!pointA || !pointB" ng-click="book()">Book</button>
+	</div>
 </div>
-<div>
-	       <div class="inputArea">
-                        <label>Destination A</label>
-                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in selection" ng-model="isUniversityIP" placeholder="Click to select">
-                        </oi-select>                        
-             </div>
-</div>
+
 </div>

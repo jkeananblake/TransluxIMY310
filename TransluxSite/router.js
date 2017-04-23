@@ -1,4 +1,4 @@
-var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive','oi.select']);
+var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive','oi.select','datepicker']);
 
 transluxModule.config(["$routeProvider", function($routeProvider) {
 
