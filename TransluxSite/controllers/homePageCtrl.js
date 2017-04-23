@@ -3,5 +3,9 @@ transluxModule.controller("homePageCtrl",
     function ($scope, $location) {
 
       $scope.Name = "Home Page";
+      $scope.openPage = function(url)
+      {
+        window.location = url;
+      };
 
 }]);

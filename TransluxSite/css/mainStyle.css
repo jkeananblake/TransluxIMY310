@@ -30,7 +30,7 @@
 
 .lists {
     background-color: orange;
-    padding: 0cm 2cm 1cm 2cm;
+    padding: 0cm 2cm 2cm 2cm;
 }
 
 .logo {
@@ -252,6 +252,21 @@ h1 {
     font-weight: 300;
 }
 
+<<<<<<< HEAD
+
+.navHeadColour:hover{
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 25px;
+  color: white;
+  background-color: #e20a17 !important;
+}
+
+.navHeadColour{
+  font-family: impact;
+  font-size: 20px !important;
+  color: white !important;
+}
+=======
 .field-wrap {
     position: relative;
     margin-bottom: 40px;
@@ -379,3 +394,4 @@ div#errorMessageReg {
     font-size: 20px !important;
     color: white !important;
 }
+>>>>>>> 232318d28379900e519bc91c9835a4d171fe304f

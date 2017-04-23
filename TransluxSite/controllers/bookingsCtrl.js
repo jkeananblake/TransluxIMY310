@@ -2,7 +2,7 @@ transluxModule.controller("bookingsCtrl",
     ["$scope", "$location", "transluxService",
     function ($scope, $location, transluxService) {
 
-      $scope.Name = "Bookings Page";
+      //$scope.pageName = "Bookings Page";
       $scope.path = './Json/';
 
       transluxService.getDeparturePoints($scope.path).then(function (results) {
