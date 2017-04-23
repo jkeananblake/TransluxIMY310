@@ -1,13 +1,37 @@
-<div>
+<div class="container">
   <h1>Nav Bar here</h1>
-  <div>
-  		<leaflet center="SouthAfrica" event-broadcast="events"  paths="paths" markers="markers" maxbounds="maxbounds" defaults="defaults" width="50%" height="380px"></leaflet>
+
+<div class="row">
+
+	<div class="col-lg-6">
+	  		<leaflet center="SouthAfrica" event-broadcast="events"  paths="paths" markers="markers" maxbounds="maxbounds" defaults="defaults" height="500px"></leaflet>
+	</div>
+	<div  class="col-lg-6">
+
+	<div>
+		Select your desired route by clicking on the green path on the map or manualy selecting your destination points.
+	</div>
+
+		       <div class="inputArea">
+	                        <label>Destination A</label>
+	                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in departurePoints" ng-model="pointA" placeholder="Click to select point A">
+	                        </oi-select>                        
+	             </div>
+	             <div class="inputArea">
+	                        <label>Destination B</label>
+	                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in departurePoints" ng-model="pointB" placeholder="Click to select point B">
+	                        </oi-select>                        
+	             </div>
+<!-- 	                       <div class="inputArea">
+                                <label>Date</label>
+                              <input type="date" data-datepicker="{theme: 'flat'}" ng-change="dateValidate()" class="form-control" placeholder="" ng-model="theDate"  name=dste/>
+                               <input   name="dste" type="date" ng-model="theDate" ng-change="dateValidate()"  class="form-control" placeholder="" />
+
+                      </div>
+ -->
+ <br/>
+ <button ng-disabled="!pointA || !pointB" ng-click="book()">Book</button>
+	</div>
 </div>
-<div>
-	       <div class="inputArea">
-                        <label>Destination A</label>
-                        <oi-select class="inputs" style="text-align:left" oi-options="x.name for x in selection" ng-model="isUniversityIP" placeholder="Click to select">
-                        </oi-select>                        
-             </div>
-</div>
+
 </div>

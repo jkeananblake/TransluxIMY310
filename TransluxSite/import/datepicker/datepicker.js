@@ -100,7 +100,7 @@ Datepicker.prototype.init = function() {
 
     //api events
     .on('showdatepicker.datepicker', function(e) {
-        self.displayed = (self.value || moment()).clone().date(1);
+        self.displayed = (self.value || moment()).clone().date(1);
         self.$picker.show().trigger('_render');
         lastopened = new Date();
 
