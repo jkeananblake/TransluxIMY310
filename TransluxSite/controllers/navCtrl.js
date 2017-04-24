@@ -7,7 +7,7 @@ transluxModule.controller("navCtrl",
    	console.log(val);
    		if(val == 1)
    		{
-   			  $location.path('/bookings' + 1);
+   			  $location.path('/bookings');
    		}
    		else if(val == 2)
    		{
@@ -27,7 +27,7 @@ transluxModule.controller("navCtrl",
    		}
    		else
    		{
-   			$location.path('/');	
+   			$location.path('/');
    		}
 
    }
