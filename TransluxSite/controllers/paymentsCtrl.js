@@ -18,4 +18,8 @@ transluxModule.controller("paymentsCtrl",
         controller: "navCtrl"
         }
 
+      $scope.goHome = function(){
+        $location.path('/');
+      }
+
 }]);

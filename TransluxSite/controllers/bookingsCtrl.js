@@ -138,4 +138,8 @@ transluxModule.controller("bookingsCtrl",
       $scope.step--;
     }
 
+    $scope.goToPayments = function(){
+      $location.path('/payments');
+    }
+
 }]);
