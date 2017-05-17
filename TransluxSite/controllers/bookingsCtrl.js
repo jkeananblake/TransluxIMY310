@@ -70,6 +70,72 @@ transluxModule.controller("bookingsCtrl",
       $scope.url = {
         templateUrl: "pages/navBar.html",
         controller: "navCtrl"
+      }
+
+      ///////////////////////////////////// NEW CALENDAR CODE ////////////////////////////////////////
+      $scope.changeMode = function (mode) {
+        $scope.mode = mode;
+    };
+
+    $scope.today = function () {
+        $scope.currentDate = new Date();
+    };
+
+    $scope.isToday = function () {
+        var today = new Date(),
+            currentCalendarDate = new Date($scope.currentDate);
+
+        today.setHours(0, 0, 0, 0);
+        currentCalendarDate.setHours(0, 0, 0, 0);
+        return today.getTime() === currentCalendarDate.getTime();
+    };
+
+    $scope.loadEvents = function () {
+        $scope.eventSource = createRandomEvents();
+    };
+
+    $scope.onEventSelected = function (event) {
+        $scope.event = event;
+    };
+
+    $scope.onTimeSelected = function (selectedTime, events) {
+        console.log('Selected time: ' + selectedTime + ' hasEvents: ' + (events !== undefined && events.length !== 0));
+    };
+
+    function createRandomEvents() {
+        console.log("called");
+        var events = [];
+        for (var i = 0; i < 50; i += 1) {
+            var date = new Date();
+            //var eventType = Math.floor(Math.random() * 2);
+            var startDay = Math.floor(Math.random() * 90);
+            var endDay = startDay;
+            var startTime;
+            var endTime;
+
+                var startMinute = Math.floor(Math.random() * 24 * 60);
+                var endMinute = 5 + startMinute;
+                startTime = new Date(date.getFullYear(), date.getMonth(), date.getDate() + startDay, 0, date.getMinutes() + startMinute);
+                endTime = new Date(date.getFullYear(), date.getMonth(), date.getDate() + endDay, 0, date.getMinutes() + endMinute);
+                events.push({
+                    title: 'Booking for ' + $scope.departurePoint.name + ' -> ' + $scope.destinationPoint.name,
+                    startTime: startTime,
+                    endTime: endTime,
+                    allDay: false
+                });
+
         }
+        return events;
+    }
+
+    $scope.step = 1;
+
+    $scope.nextStep = function(){
+      $scope.step++;
+    }
+
+    $scope.prevStep = function(){
+      $scope.step--;
+    }
 
 }]);

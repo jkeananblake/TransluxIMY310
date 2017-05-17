@@ -1,4 +1,4 @@
-var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive','oi.select','datepicker']);
+var transluxModule = angular.module('transluxModule', ['ngRoute','leaflet-directive','oi.select','datepicker', 'ui.rCalendar']);
 
 transluxModule.config(["$routeProvider", function($routeProvider) {
 
