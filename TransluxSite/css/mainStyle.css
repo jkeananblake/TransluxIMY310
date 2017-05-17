@@ -83,6 +83,8 @@ h1 {
     font-family: impact;
     font-size: 20px !important;
     color: white !important;
+    cursor: pointer;
+    cursor: hand;
 }
 
 .navHeadColour:hover {

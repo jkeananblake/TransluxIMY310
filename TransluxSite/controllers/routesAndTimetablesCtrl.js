@@ -164,6 +164,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
                 $scope.event = "clicked";
                 console.log(path);
 
+
                 if(path.modelName == "p1")
                 {
                 	//pretoria to capetown
@@ -236,6 +237,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
 
                 	console.log("else");
                 }
+                $scope.checkValidate();
         });
 
 
@@ -244,6 +246,16 @@ $scope.book = function()
 	var pathData =  $scope.pointA.Id +","+$scope.pointB.Id;
 	console.log(pathData);
        $location.path('/bookings' + pathData);
+}
+
+$scope.validEq = false;
+$scope.checkValidate = function(){
+
+    $scope.validEq = false;
+    if(($scope.pointA != null && $scope.pointB != null) && $scope.pointA == $scope.pointB)
+    {
+        $scope.validEq = true;
+    }
 }
 
 

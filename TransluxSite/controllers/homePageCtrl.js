@@ -13,4 +13,9 @@ transluxModule.controller("homePageCtrl",
         templateUrl: "pages/navBar.html",
         controller: "navCtrl"
         }
+
+        $scope.goToBookings = function()
+        {
+        	$location.path('/bookings');
+        }
 }]);
