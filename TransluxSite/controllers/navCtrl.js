@@ -32,4 +32,18 @@ transluxModule.controller("navCtrl",
 
    }
 
+   $scope.isActive = function(url)
+   {
+      var des = $location.path();
+
+
+      if(des == url)
+      {
+        console.log(des);
+        console.log(url);
+        return true;
+      }
+      return false;
+   }
+
 }]);

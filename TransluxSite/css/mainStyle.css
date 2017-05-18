@@ -154,6 +154,13 @@ h1 {
     background-color: #e20a17 !important;
 }
 
+.navHeadColour.active {
+    font-family: impact;
+    font-size: 25px;
+    color: white;
+    background-color: #e20a17 !important;
+}
+
 .navHeadColour {
     font-family: impact;
     font-size: 20px !important;
