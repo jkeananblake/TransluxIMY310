@@ -35,7 +35,7 @@ transluxModule.controller("routesAndTimetablesCtrl",
         }
 
         //get sa lat nd long here
-        //https://www.distancesto.com/coordinates/za/polokwane-latitude-longitude/history/7767.html 
+        //https://www.distancesto.com/coordinates/za/polokwane-latitude-longitude/history/7767.html
 
         angular.extend($scope, {
             maxbounds: SouthAfricanRegion,
@@ -180,11 +180,11 @@ transluxModule.controller("routesAndTimetablesCtrl",
                 			$scope.pointB = $scope.departurePoints[i];
                 		}
                 	}
-              
+
                 }
                 else if(path.modelName == "p2")
                 {
-                	//jhb to durban	
+                	//jhb to durban
                 	for(var i = 0;i < $scope.departurePoints.length;i++)
                 	{
                 		if($scope.departurePoints[i].Id == 4)
@@ -245,7 +245,7 @@ $scope.book = function()
 {
 	var pathData =  $scope.pointA.Id +","+$scope.pointB.Id;
 	console.log(pathData);
-       $location.path('/bookings' + pathData);
+       $location.path('/bookings/' + pathData);
 }
 
 $scope.validEq = false;

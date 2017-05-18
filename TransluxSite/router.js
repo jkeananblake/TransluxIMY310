@@ -11,6 +11,10 @@ transluxModule.config(["$routeProvider", function($routeProvider) {
        templateUrl: "pages/bookings.html",
        controller: "bookingsCtrl"
    })
+   .when("/bookings/:id", {
+       templateUrl: "pages/bookings.html",
+       controller: "bookingsCtrl"
+   })
    .when("/customerCare", {
        templateUrl: "pages/customerCare.html",
        controller: "customerCareCtrl"
