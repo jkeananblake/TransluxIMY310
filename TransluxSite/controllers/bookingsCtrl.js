@@ -3,9 +3,11 @@ transluxModule.controller("bookingsCtrl",
     function ($scope, $location, transluxService, $routeParams) {
 
       var id = $routeParams.id;
-      var idList = id.split(',');
-      console.log(idList);
-
+      if(id != null)
+      {
+        var idList = id.split(',');
+        console.log(idList);
+      }
 
       //$scope.pageName = "Bookings Page";
       $scope.path = './Json/';
@@ -16,6 +18,8 @@ transluxModule.controller("bookingsCtrl",
 
           // for(var i = 0; i < idList.length; i++)
           // {
+          if(id != null)
+          {
               for(var x = 0; x < $scope.departurePoints.length; x++)
               {
                   if(idList[0] == $scope.departurePoints[x].Id)
@@ -31,6 +35,7 @@ transluxModule.controller("bookingsCtrl",
                     $scope.destinationPoint = $scope.destinationPoints[x];
                 }
               }
+            }
           // }
 
       },
