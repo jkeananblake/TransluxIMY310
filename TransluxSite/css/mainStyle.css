@@ -8,6 +8,10 @@
     /*border: 0.5px dashed white !important;*/
 }
 
+#everything {
+    padding: 0cm 2cm 2cm 2cm;
+}
+
 .whitebk {
     color: white;
     background-color: white;
@@ -293,7 +297,7 @@ header,
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: red;
 }
 
 .containerfade:hover .overlayfade {
@@ -325,7 +329,7 @@ header,
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: red;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -338,7 +342,7 @@ header,
 }
 
 .textslidetop {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     color: white;
     font-size: 20px;
     position: absolute;
@@ -364,7 +368,7 @@ header,
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: red;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -376,11 +380,11 @@ header,
 }
 
 .textslidebottom {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     color: white;
     font-size: 20px;
     position: absolute;
-    overflow: hidden;
+    /*   overflow: hidden;*/
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -402,7 +406,7 @@ header,
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: red;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -440,7 +444,7 @@ header,
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: #008CBA;
+    background-color: red;
     overflow: hidden;
     width: 0;
     height: 100%;
