@@ -35,6 +35,8 @@ transluxModule.controller("bookingsCtrl",
                     $scope.destinationPoint = $scope.destinationPoints[x];
                 }
               }
+              $scope.step = 3;
+              $scope.loadEvents();
             }
           // }
 
