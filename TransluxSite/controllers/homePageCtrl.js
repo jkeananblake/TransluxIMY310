@@ -18,4 +18,9 @@ transluxModule.controller("homePageCtrl",
         {
         	$location.path('/bookings');
         }
+
+        $scope.setVar = function(num)
+        {
+          $scope.para = num;
+        }
 }]);
